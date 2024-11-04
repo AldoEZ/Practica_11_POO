@@ -25,37 +25,35 @@ public class Practica11 {
         List<String> list = new ArrayList<String>();
         
         try {
-            BufferedReader br1 = new BufferedReader(new FileReader("C:/POO/practicas_poo/practica11/p11/archivo1.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:/POO/practicas_poo/practica11/p11/archivo1.txt"));
             while(strLine != null) {
-                strLine = br1.readLine();
+                strLine = br.readLine();
                 
                 if(strLine == null) break;
                 
                 list.add(strLine);
             }
-            br1.close();
             strLine = "";
             
-            BufferedReader br2 = new BufferedReader(new FileReader("C:/POO/practicas_poo/practica11/p11/archivo2.txt"));
+            br = new BufferedReader(new FileReader("C:/POO/practicas_poo/practica11/p11/archivo2.txt"));
             while(strLine != null) {
-                strLine = br2.readLine();
+                strLine = br.readLine();
                 
                 if(strLine == null) break;
                 
                 list.add(strLine);
             }
-            br2.close();
             strLine = "";
             
-            BufferedReader br3 = new BufferedReader(new FileReader("C:/POO/practicas_poo/practica11/p11/archivo3.txt"));
+            br = new BufferedReader(new FileReader("C:/POO/practicas_poo/practica11/p11/archivo3.txt"));
             while(strLine != null) {
-                strLine = br3.readLine();
+                strLine = br.readLine();
                 
                 if(strLine == null) break;
                 
                 list.add(strLine);
             }
-            br3.close();
+            br.close();
             
             String fileName = "C:/POO/practicas_poo/practica11/p11/archivoFinal.txt";
             FileWriter fw = new FileWriter(fileName, false);
